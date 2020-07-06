@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Noto Sans Mono:Regular:pixelsize=20:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -95,44 +95,28 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-
-  /* 8 normal colors */
-  [0] = "#fbf1c7", /* hard contrast: #f9f5d7 / soft contrast: #f2e5bc */
-  [1] = "#cc241d", /* red     */
-  [2] = "#98971a", /* green   */
-  [3] = "#d79921", /* yellow  */
-  [4] = "#458588", /* blue    */
-  [5] = "#b16286", /* magenta */
-  [6] = "#689d6a", /* cyan    */
-  [7] = "#7c6f64", /* white   */
-
-  /* 8 bright colors */
-  [8]  = "#928374", /* black   */
-  [9]  = "#9d0006", /* red     */
-  [10] = "#79740e", /* green   */
-  [11] = "#b57614", /* yellow  */
-  [12] = "#076678", /* blue    */
-  [13] = "#8f3f71", /* magenta */
-  [14] = "#427b58", /* cyan    */
-  [15] = "#3c3836", /* white   */
+  "#090300", /* base00 */
+  "#db2d20", /* base08 */
+  "#01a252", /* base0B */
+  "#fded02", /* base0A */
+  "#01a0e4", /* base0D */
+  "#a16a94", /* base0E */
+  "#b5e4f4", /* base0C */
+  "#a5a2a2", /* base05 */
+  "#5c5855", /* base03 */
+  "#e8bbd0", /* base09 */
+  "#3a3432", /* base01 */
+  "#4a4543", /* base02 */
+  "#807d7c", /* base04 */
+  "#d6d5d4", /* base06 */
+  "#cdab53", /* base0F */
+  "#f7f7f7", /* base07 */
 };
 
-/*
- * Default colors (colorname index)
- * foreground, background, cursor
- */
-unsigned int defaultfg = 15;
+unsigned int defaultfg = 7;
 unsigned int defaultbg = 0;
-static unsigned int defaultcs = 15;
-static unsigned int defaultrcs = 257;
-
-/*
- * Default shape of cursor
- * 2: Block ("█")
- * 4: Underline ("_")
- * 6: Bar ("|")
- * 7: Snowman ("☃")
- */
+static unsigned int defaultcs = 13;
+static unsigned int defaultrcs = 0;
 static unsigned int cursorshape = 2;
 
 /*
